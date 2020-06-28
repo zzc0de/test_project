@@ -1,13 +1,14 @@
-let incr = 10,
-    decr = 10;
+let plus = 10,
+    minus = 10;
+
+document.write(++plus);
+document.write(--minus);
 
 
-console.log(incr++ );
-console.log(decr--);
+let userInfo = {
+    name: 'Alex',
+    age: 37,
+    city: 'Moscow'
+};
 
-console.log(5%2);
-
-let isChecked = true,
-    isClose = true;
-
-console.log(isChecked && isClose)
+console.log(userInfo.name);
