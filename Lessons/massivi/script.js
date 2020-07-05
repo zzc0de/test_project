@@ -14,5 +14,5 @@ console.log(result);
 const massive1 = [1, 3, 5, 6];
 const massive2 = [7, 45, 12, 678];
 
-const shallowCopy = [...massive1, ...massive2];
-console.log(shallowCopy);
+const shallowCopy = [...massive1, ...massive2, 41, 56];
+console.log(shallowCopy); 

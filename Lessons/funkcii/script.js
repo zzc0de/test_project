@@ -58,6 +58,8 @@ const res = arr
 console.log(res);
 
 
+
+
 const greeter = {
     greet: function (name) {
         console.log('Hello', name);
@@ -66,10 +68,18 @@ const greeter = {
     greetAll: function (names) {
         names.forEach((name) => {
             this.greet(name);
-        });
+        }); 
     }
 };
 greeter.greetAll(['Bob', 'Mark', 'Peter']);
+
+
+function numberRest(z, ...numbers) {
+    console.log(numbers);
+}
+numberRest(1, 2, 3, 4, 5, 6, 7);
+
+
 
 
 
