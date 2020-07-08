@@ -5,9 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-RU-Compatible" content="ie=edge">
     <title>Document</title>
+    
 </head>
 <body>
+    <div id="demo">   
+        <p>1</p>
+        <p>1</p>
+        <p>1</p>
+    </div>
 
-    <script src="script.js"></script>
+<p>hi</p>
+<p>hi</p>
+<p>hi</p>
+
+<script>
+    let replaceP = document.getElementsByTagName('p');
+    for (let x = 0; x < replaceP.length; x++) {
+        replaceP[x].innerHTML = 'Huuuuu';
+    }
+</script>
+
+<script>
+    let a = document.getElementById('demo');
+    let arr = a.childNodes;
+    let arr = a.childNodes;
+    for(let x = 0; x < arr.length; x++) {
+        arr[x].innerHTML = 'Putin';
+    }
+
+</script>
+
+
 </body>
 </html>

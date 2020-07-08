@@ -67,3 +67,25 @@ console.log(a, b, c);
 const people = ['chris', 'sandra', 'bob', 'alex'];
 const [a, ...others] = people;
 console.log(others);
+
+const dict = {
+    duck: 'krya-krya',
+    dog: 'wuff',
+    mouse: 'pipipi',
+    hamster: 'squeak'
+};
+
+const res = Object.entries(dict);
+console.log(res);
+
+
+const shape = {
+    type: 'segment',
+    coordinates: {
+        start: [10, 15],
+        end: [17, 15]
+    }
+};
+
+const { coordinates: { start: [startX, startY], end: [endX, endY]}} = shape;
+console.log(startX, startY, endX, endY);
