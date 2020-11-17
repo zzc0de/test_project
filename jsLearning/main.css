@@ -1,0 +1,19 @@
+
+body {
+    background:#202224;
+}
+
+.wrapper {
+    display: flex;
+    max-width: 100%;
+    justify-content: center;
+    position: relative;
+    background-color:#000;
+}
+
+.box {
+    background-color: lightblue;
+    height: 100px;
+    width:100px;
+    position: absolute;
+}

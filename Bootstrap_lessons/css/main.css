@@ -1,0 +1,113 @@
+body {
+    margin: 0;
+    padding: 0;
+    background:url('../images/services/bg-wallpaper.jpg') top center no-repeat;
+}
+
+.wrapper-training-category {
+    margin-top: 50px;
+    flex-wrap: wrap;
+    display: flex;
+    align-content:center;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.card-training-category {
+    display: flex;
+    max-width: 300px;
+    margin: 12px;
+    align-items:center;
+    align-content: center;
+    justify-content: center;
+    transition: all .63s;
+    background:url('../images/services/black-texture.jpg');
+}
+
+.card-training-category:hover {
+    transform: scale(1.17);
+    box-shadow: 27px 27px 34px rgb(0,0,0,.9);
+    z-index: 2;
+}
+
+.card-training-category:hover::before {
+    content:"";
+    width:100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+    box-shadow: 10px 7px 25px rgb(130,0,0,.3);
+}
+
+.img-trainig {
+    width: 100%;
+    object-fit: cover;
+    clip-path: polygon(0 0, 100% 0, 100% 71%, 0 86%);
+}
+
+
+.categoty-title  {
+    position: absolute;
+    z-index: 4;
+    align-self: flex-end;
+    padding-bottom: 30px;
+
+}
+
+.categoty-title:hover {
+    animation: shake-text-zzc0de 0.5s cubic-bezier(0,.67,.47,1.69);
+}
+
+.categoty-title a{
+    text-decoration: none;
+    color:#e8e8e8;
+    text-transform: uppercase;
+    font-family: 'Bebas Neue Regular';
+    font-weight: 800;
+    font-size: 27px;
+    letter-spacing: 1px;
+}
+.categoty-title a:hover {
+    animation: shake-text-zzc0de 0.5s cubic-bezier(0,.67,.47,1.69);
+}
+
+@keyframes shake-text-zzc0de {
+    0% { transform: translate(1px, 1px) rotate(0deg); color: #ffffff;}
+    12% { transform: translate(-1px, -3px) rotate(-4deg); font-size: 33px; color: #a00000;}
+    24% { transform: translate(-3px, 0px) rotate(5deg); font-size: 34px; color: #a00000;}
+    36% { transform: translate(1px, 1px) rotate(-5deg); font-size: 39px;color: #f5f5f5;}
+    48% { transform: translate(-1px, -3px) rotate(-1deg); font-size: 29px; color: #ffffff;}
+    60% { transform: translate(1px, 1px) rotate(-8deg); font-size: 43px; color: #a00000;}
+    72% { transform: translate(-1px, -3px) rotate(1deg); font-size: 29px; color: #ffffff;}
+    84% { transform: translate(-1px, -3px) rotate(-4deg); font-size: 35px; color: #a00000;}
+    100% { transform: translate(-3px, 0px) rotate(11deg); font-size: 43px; color: #a00000;}
+}
+
+.next-button {
+    position: absolute;
+    opacity: 0;
+    background-color:#ba0101;
+    padding: 8px 12px;
+    align-self: center;
+}
+
+.next-button a{
+    color: #ffffff;
+    text-decoration: none;
+    font-family: 'Bebas Neue Regular';
+    font-size: 15px;
+}
+
+
+
+
+@media screen and (max-width:920px) {
+
+    .wrapper-training-category {
+        flex-wrap: wrap;
+        align-content:center;
+        flex-direction: column;
+
+    }
+}
+
