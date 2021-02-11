@@ -1,19 +1,31 @@
-
 body {
-    background:#202224;
+
 }
 
-.wrapper {
-    display: flex;
-    max-width: 100%;
-    justify-content: center;
-    position: relative;
-    background-color:#000;
+.page {
+  background-color: burlywood;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  height: 100vh;
+  margin: 0;
 }
 
-.box {
-    background-color: lightblue;
-    height: 100px;
-    width:100px;
-    position: absolute;
+.block1 {
+  display: flex;
+  align-items:center;
+  justify-content: center;
+  flex-direction: column;
+}
+.block2{
+  display: flex;
+  align-items:center;
+  justify-content: center;
+  flex-direction: column;
+}
+.block3 {
+  display: flex;
+  align-items:center;
+  justify-content: center;
+  flex-direction: column;
 }

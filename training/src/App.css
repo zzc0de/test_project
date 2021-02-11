@@ -1,0 +1,115 @@
+body {
+  background-color: #2f3543;
+}
+.App {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.Laptops {
+  display: flex;
+  width:260px;
+  justify-content: center;
+  flex-direction: column;
+  align-content:center;
+  text-align: center;
+  background-color: #353b49;
+  padding: 20px 30px 60px;
+  margin-top: 40px;
+  box-shadow: 25px 25px 40px rgba(17, 19, 24, 0.5);
+}
+.cars {
+  padding-bottom: 20px;
+   border-bottom: 1px solid #3e4555;
+  position: relative;
+}
+.cars::after {
+  content: "";
+  border-bottom: 1px solid #2f3440;
+  position: absolute;
+  top: -10px;
+  width: 100%;
+  left:0;
+  bottom: 0px;
+  z-index: 2;
+}
+
+
+h1 {
+  font-size: 25px;
+  text-transform: uppercase;
+  letter-spacing: -.7px;
+  color: #f8fcfd;
+}
+
+h2 {
+  font-size: 21px;
+  text-transform: uppercase;
+  letter-spacing: -.7px;
+  color: #f8fcfd;
+}
+.device-model {
+  color:#f8fcfd;
+}
+
+.device-price {
+  color:#f8fcfd;
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.btn_change {
+  background-color: #00d5c3;
+  position: relative;
+  z-index: 3;
+  border: none;
+  color:#2b333b;
+  padding: 9px 18px;
+  transition: background-color .8s;
+}
+
+.btn_change:hover {
+  background-color: #04f4e0;
+}
+
+.btn_saleall {
+  margin-top: 35px;
+  font-size: 17px;
+  background-color: #7800d5;
+  border: none;
+  padding: 13px 23px;
+  color: #fff;
+  transition: background-color .8s;
+}
+
+.btn_saleall:hover {
+  background-color: #a500d5;
+
+}
+
+.input-area:active, .input-area:focus {
+  outline: none;
+}
+
+
+.input-area.green {
+  border:1px solid green;
+
+}
+.input-area.red {
+  border: 1px solid red;
+
+}
+.input-area.medium {
+  border: 7px solid rgb(13, 124, 175);
+
+}
+.input-area.bold {
+  border: 11px solid rgb(117, 12, 77);
+
+}
+.price {
+  position: relative;
+  z-index: 7;
+}
