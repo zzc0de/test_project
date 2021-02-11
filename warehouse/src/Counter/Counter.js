@@ -12,16 +12,22 @@ class Counter extends React.Component {
         const shadowEffectRed = '20px 20px 35px rgba(183,0,35, 0.4)';
         const shadowEffectBlack = '20px 20px 35px rgba(20, 14, 19, 0.7)';
 
-        this.setState({
-            counter: this.state.counter - 1,
+        this.setState((prevState) => {
+            return {
+                counter: prevState.counter - 1,
+            }
         })
 
         if (this.state.counter >= 3 && this.state.counter <= 7) { 
             shadowChange.style.boxShadow = shadowEffectYellow;
         } else if (this.state.counter > 7) {
             shadowChange.style.boxShadow = shadowEffectRed;
+        } else if (this.state.counter <= 0) {
+            this.setState({
+                counter: 0,
+            })
         } else {
-            shadowChange.style.boxShadow =shadowEffectBlack;
+            shadowChange.style.boxShadow = shadowEffectBlack;
         }
     }
 
@@ -31,8 +37,10 @@ class Counter extends React.Component {
         const shadowEffectRed = '20px 20px 35px rgba(183,0,35, 0.4)';
         const shadowEffectBlack = '20px 20px 35px rgba(20, 14, 19, 0.7)';
 
-        this.setState({
-            counter: this.state.counter + 1,
+        this.setState((prevState) => {
+            return {
+                counter: prevState.counter + 1,
+            }
         })
 
         if (this.state.counter >= 3 && this.state.counter <= 7) { 
