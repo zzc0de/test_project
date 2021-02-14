@@ -159,6 +159,10 @@ h3 {
   margin: 11px 0;
 }
 
+.date_render {
+  padding-top: 20px;
+}
+
 @media screen and (max-width: 800px) {
   .devices {
     display:flex;

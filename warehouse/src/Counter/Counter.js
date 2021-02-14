@@ -4,6 +4,17 @@ class Counter extends React.Component {
 
     state = {
         counter: 0,
+        time: new Date(),
+    }
+    
+    timeAction = () => {
+        this.setState({
+            time: new Date(),
+        })
+    }
+
+    componentDidMount() {
+        this.timerId = setInterval(() => this.timeAction(), 1000);
     }
 
     delCounter = () => {
@@ -58,6 +69,7 @@ class Counter extends React.Component {
                 <span className="counter_text">Counter: {this.state.counter}</span>
                 <button className="btn_counter" onClick={this.delCounter}>-</button>
                 <button className="btn_counter" onClick={this.addCounter}>+</button>
+                <div className="date_render">{this.state.time.toLocaleTimeString()}</div>
             </div>
         )
     }
