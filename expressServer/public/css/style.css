@@ -1,0 +1,10 @@
+.send-form {
+    display: flex;
+    flex-direction: column;
+    background-color: aquamarine;
+
+}
+body {
+    margin: 0;
+    background-color: #005fa7;
+}
